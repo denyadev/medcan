@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.main__carousel__text {
+  text-align: left!important;
+  top: 40vh;
+  padding-left: 20px;
+}
+
+.product__review {
+  font-family: 'Open Sans', sans-serif!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.phone__input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.5rem);
+  padding: .75rem 1.5rem;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #f7f7f9;
+  background-clip: padding-box;
+  border: 0 solid #ced4da;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 0;
+  font-family: inherit
+}
+
+.sorting__button {
+  background: none!important;
+	color: inherit!important;
+	border: none!important;
+	padding: 0 0 20px!important;
+	font: inherit!important;
+	cursor: pointer!important;
+	outline: none!important;
+  display: block!important;
+}
+
+.features__list {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* ABOUT US */
+/* --------------------------------------------------------------------- */
+.about__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 35px auto 35px;
+  letter-spacing: normal;
+}
+
+.ways__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #303030;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.ways__main__title {
+  margin: auto auto 35px;
+  color: #505050;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.test__text {
+  font-family: 'Roboto', sans-serif;
+  color: #303030;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.test__image {
+  width: 120px!important;
+  height: auto!important;
+}
+
+.test__carousel {
+  margin: 0px!important;
+}
+
+.carousel__item {
+  height: 350px;
+}
+
+.test__carousel__brian {
+  height: 150px;
+}
+
+@media (max-width: 900px) {
+  .test__text {
+    font-size: 14px;
+  }
+  .carousel__item {
+    height: 500px;
+  }
+  .test__carousel__brian {
+    height: 250px;
+  }
+}
+
+
+/* --------------------------------------------------------------------- */
+/* CONTACT US */
+/* --------------------------------------------------------------------- */
+
+.contact__text {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.contact__title {
+  font-family: 'Poppins', sans-serif;
+  color: #666666;
+  font-size: 20px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+/* --------------------------------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------------------------------- */
+
+.header__main {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  color: #303030;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+} 
+
+header .header__logo {
+  width: 160px;
+  height: auto;
+}
+
+header .navbar__nav {
+  z-index: 10;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+header .nav__text {
+  font-size: 16px;
+  text-transform: uppercase!important;
+  font-weight: 600!important;
+  padding: 10px 15px!important;
+  color: #7a7a7a!important;
+  position: relative!important;
+  outline: 0 !important;
+  margin: 0!important;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .nav__text__right {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-transform: none;
+}
+
+header .nav__text:hover  {
+  color: #0053A9!important;
+}
+
+header .nav-link.active {
+  color: #0053A9!important;
+}
+
+header .nav__text__right:hover {
+  color: #0053A9!important;
+}
+
+header .search__box {
+  border-radius: 30px 0px 0px 30px;
+}
+
+header .search__btn {
+  border-radius: 0px 30px 30px 0px;
+}
+
+/* --------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------- */
+footer {
+
+}
+
+footer .footer__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #0053A9;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: normal;  
+}
+
+footer .ft__title {
+  font-family: 'Poppins', sans-serif;
+  color: #0053A9;
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+footer .ft__logo {
+  margin-bottom: 24px;
+  object-fit: contain;
+  scale: 0.8em;
+}
+
+footer .social__icon {
+  font-size: 35px;
+  padding: 0 0.3em 0 0;
+  color: #0053A9;
+}
+
+footer .social__icon:hover {
+  color: #008F4A;
+}
+
+footer a:hover {
+  color: #008F4A;
+  text-decoration: none;
+}
+
+footer .ft__logo {
+  width: 200px;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------- */
+/* PRODUCT SORTING */
+/* --------------------------------------------------------------------- */
+
+.store__sort {
+  font-family: 'Open Sans', sans-serif;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.store__sort__title {
+  letter-spacing: normal;
+  padding: 20px 0 20px;
+
+}
+
+/* --------------------------------------------------------------------- */
+/* PRODUCT CARD */
+/* --------------------------------------------------------------------- */
+
+.product__title {
+  /* color: #444444!important;
+  font-size: 16px!important;
+  font-weight: 500!important;
+  font-family: 'Poppins', sans-serif!important;
+  letter-spacing: normal!important;
+  margin: 0; */
+  
+  font-family: 'Open Sans', sans-serif;
+  color: #575757;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.product__price {
+  font-family: 'Open Sans', sans-serif;
+  color: #575757;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: normal;
+
+  /* color: #444444!important;
+  font-size: 16px!important;
+  font-weight: 500!important;
+  font-family: 'Poppins', sans-serif!important;
+  letter-spacing: normal!important; */
+}
+
+.product__rating {
+  margin-top: 70px!important;
+  padding: 20px!important;
+  font-size: 22px!important;
+  text-align: center!important;
+}
+
+.product__rating__text {
+  color: white;
+}
+
+.wrapper {
+  width: 300px;
+  height: 330px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #0000001c;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0;
+  transform: scale(0.8);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.wrapper:hover {
+  transform: scale(0.82);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapper .container {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .top {
+  height: 80%;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .bottom {
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom.clicked {
+  transform: translateX(-50%);
+}
+.wrapper .container .bottom h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .container .bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .container .bottom .left .details {
+  padding: 0px;
+  float: left;
+
+}
+.wrapper .container .bottom .left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper .container .bottom .left .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color: #254053;
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom .left .buy:hover {
+  background: #A6CDDE;
+}
+.wrapper .container .bottom .left .buy:hover i {
+  transform: translateY(5px);
+  color: #00394B;
+}
+.wrapper .container .bottom .right {
+  width: 50%;
+  background: #A6CDDE;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+.wrapper .container .bottom .right .details {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+.wrapper .container .bottom .right .done {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+.wrapper .container .bottom .right .done i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.wrapper .container .bottom .right .remove:hover i {
+  transform: translateY(5px);
+}
+.wrapper .container .bottom .right .remove i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper .container .bottom .right:hover .remove, .wrapper .container .bottom .right:hover .done {
+  transform: translateY(-100%);
+}
+.wrapper .inside {
+  z-index: 9;
+  background: #000000be;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  border-radius: 0px 0px 0px 0px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+.wrapper .inside .icon {
+  position: absolute;
+  right: 95px;
+  top: 90px;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+.wrapper .inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height:80%;
+}
+.wrapper .inside:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.wrapper .inside:hover .contents {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.wrapper .inside .contents {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.wrapper .inside .contents table {
+  text-align: left;
+  width: 100%;
+}
+.wrapper .inside .contents h1, .wrapper .inside .contents p, .wrapper .inside .contents table {
+  color: white;
+}
+.wrapper .inside .contents p {
+  font-size: 13px;
+}
+
+/* --------------------------------------------------------------------- */
+/* HOME SCREEN */
+/* --------------------------------------------------------------------- */
+
+.content-name-under {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #303030;
+  font-variant-ligatures: common-ligatures;
+}
+
+.content-title {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-variant-ligatures: common-ligatures;
+  margin-top: 0;
+}
+
+.main__text {
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 22px;
+  max-width: 602px;
+  color: #0053a9;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main__text__title {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: left;
+  letter-spacing: normal;
+}
+
+.main__text__title__green {
+  color: #008F4A;
+}
+
+.container-products{
+  padding: .5em 0;
+  float: left;
+  width: 100%;
+}
+
+
+.container-products .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel__caption {
+  position: absolute;
+  text-align: left!important;
+  top: 10%;
+  left: 0%!important;
+}
+
+.carousel__caption {
+  color: rgb(0, 0, 0)!important;
+}
+
+.carousel img {
+    display:block;
+    height: 300px;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel a {
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .carousel-caption h2 {
+        font-size: 2.5vw;
+    }
+    .main__text__title {
+        margin-top: -100px!important;
+        font-size: 9vw;
+    }
+    .main__text {
+        font-size: 4vw;
+    }
+    .search__box {
+        width: auto!important;
+    }
+    .collapse__color {
+        background-color: #ffffff;
+        width: 100%;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
+    }
+    .searchbar__mobile{
+        background-color: #ffffff;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact__text {
+        font-size: 4.4vw;
+    }
+    .about__icons {
+        padding-bottom: 80px!important;
+    }
+    .contact__loc__text {
+        line-height: 24px;
+    }
+    .test__carousel_audiodad {
+        bottom: 10px!important;
+    }
+    .google__maps__text {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+    .note__text {
+        font-size: 4vw!important;
+    }
+}
+
+.product__carousel {
+    background-color: #e1e9ff;
+}
+
+.about__icons {
+    position: relative;
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}

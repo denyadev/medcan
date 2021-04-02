@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9d02602c.chunk.css",
+    "main.js": "/static/js/main.54c198ef.chunk.js",
+    "main.js.map": "/static/js/main.54c198ef.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.12c865ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.12c865ba.js.map",
+    "static/js/2.aa73f44c.chunk.js": "/static/js/2.aa73f44c.chunk.js",
+    "static/js/2.aa73f44c.chunk.js.map": "/static/js/2.aa73f44c.chunk.js.map",
+    "static/js/3.0570cc00.chunk.js": "/static/js/3.0570cc00.chunk.js",
+    "static/js/3.0570cc00.chunk.js.map": "/static/js/3.0570cc00.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9d02602c.chunk.css.map": "/static/css/main.9d02602c.chunk.css.map",
+    "static/js/2.aa73f44c.chunk.js.LICENSE.txt": "/static/js/2.aa73f44c.chunk.js.LICENSE.txt",
+    "static/media/Concentrates.fa4790f5.jpg": "/static/media/Concentrates.fa4790f5.jpg",
+    "static/media/Edibles.0178e470.jpg": "/static/media/Edibles.0178e470.jpg",
+    "static/media/Hash.d3e2a629.jpg": "/static/media/Hash.d3e2a629.jpg",
+    "static/media/Hybrid.930c2ec4.jpg": "/static/media/Hybrid.930c2ec4.jpg",
+    "static/media/Indica.89cca4a7.jpg": "/static/media/Indica.89cca4a7.jpg",
+    "static/media/Sativa.6548e785.jpg": "/static/media/Sativa.6548e785.jpg",
+    "static/media/about.54a3b654.jpg": "/static/media/about.54a3b654.jpg",
+    "static/media/carousel_001.4c485791.jpg": "/static/media/carousel_001.4c485791.jpg",
+    "static/media/carousel_002.c5415416.jpg": "/static/media/carousel_002.c5415416.jpg",
+    "static/media/med_contact.5a86f3db.jpg": "/static/media/med_contact.5a86f3db.jpg",
+    "static/media/medcan.74beab05.png": "/static/media/medcan.74beab05.png",
+    "static/media/medcan_01.f650f164.jpg": "/static/media/medcan_01.f650f164.jpg",
+    "static/media/medcan_02.d043dc30.jpg": "/static/media/medcan_02.d043dc30.jpg",
+    "static/media/medcan_04.5244baa2.jpg": "/static/media/medcan_04.5244baa2.jpg",
+    "static/media/medcan_05.9361cb92.jpg": "/static/media/medcan_05.9361cb92.jpg",
+    "static/media/pattern.3c6a2303.jpg": "/static/media/pattern.3c6a2303.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12c865ba.js",
+    "static/js/2.aa73f44c.chunk.js",
+    "static/css/main.9d02602c.chunk.css",
+    "static/js/main.54c198ef.chunk.js"
+  ]
+}
