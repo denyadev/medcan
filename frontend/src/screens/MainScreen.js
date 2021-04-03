@@ -37,7 +37,7 @@ function MainScreen({ history }) {
                         <Carousel.Caption className='main__carousel__text'>
                             <h1 className="main__text__title">Welcome To <span className="main__text__title__green">MedCan</span></h1>
                             <p className="main__text">High quality cannabis from professional growers in British Columbia and California.</p>
-                            <LinkContainer to='/store'>
+                            <LinkContainer to={'/store'}>
                                 <Button variant='success'>Shop Now</Button>
                             </LinkContainer>
                         </Carousel.Caption>
@@ -46,7 +46,7 @@ function MainScreen({ history }) {
                         <Carousel.Caption className='main__carousel__text'>
                             <h1 className="main__text__title">Here At <span className="main__text__title__green">MedCan</span></h1>
                             <p className="main__text">We are dedicated in providing safe access to affordable quality cannabis.</p>
-                            <LinkContainer to='/store'>
+                            <LinkContainer to={'/store'}>
                                 <Button variant='success'>Shop Now</Button>
                             </LinkContainer>
                         </Carousel.Caption>
@@ -62,7 +62,7 @@ function MainScreen({ history }) {
                         <div style={{display: 'inline'}}>
                             <div className="container-categories">
                             <div className="content">
-                                <LinkContainer to='/store'>
+                                <LinkContainer to={'/store'}>
                                     <div className="content-overlay"></div>
                                     <Image className="content-image" src={cat.image}/>
                                     <div className="content-details fadeIn-bottom">
