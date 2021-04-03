@@ -25,20 +25,20 @@ def addOrderItems(request):
         # (1) Create order
         order = Order.objects.create(
             user=user,
-            paymentMethod=data['paymentMethod'],
+            paymentMethod=None,
             taxPrice=data['taxPrice'],
             shippingPrice=data['shippingPrice'],
             totalPrice=data['totalPrice'],
             expectedTime=data['expectedTime']
         )
         # (2) Create shipping address
-        shipping = ShippingAddress.objects.create(
-            order=order,
-            address=data['shippingAddress']['address'],
-            city=data['shippingAddress']['city'],
-            postalCode=data['shippingAddress']['postalCode'],
-            country=data['shippingAddress']['country']
-        )
+        # shipping = ShippingAddress.objects.create(
+        #     order=order,
+        #     address=data['shippingAddress']['address'],
+        #     city=data['shippingAddress']['city'],
+        #     postalCode=data['shippingAddress']['postalCode'],
+        #     country=data['shippingAddress']['country']
+        # )
 
         # (3) Create order items and set order to orderItem relationship
         for i in orderItems:
