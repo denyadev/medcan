@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Jumbotron, Image, Breadcrumb, Button, Carousel, Container } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'react-router-dom'
 import about from '../images/breadcrumbs/about.jpg'
 import icon1 from '../images/icons-01.png'
 import icon2 from '../images/icons-02.png'
@@ -19,9 +19,9 @@ function AboutScreen() {
                     <Col md={6} sm={12}>
                         <h2>About Us</h2>
                         <p className="about__text">Medcan is a cannabis dispensary in Missisauga that is known for our exceptional quality of both product and service. We are dedicated in providing superior customer service and we offer a variety of premium quality products including flower, edibles, and extracts. We always deliver quality over quantity, with exclusive, exciting strains and products at competitive prices. Our staff are always happy to assist you in finding exactly what you're looking for, whether you are a seasoned consumer or just beginning your cannabis journey, we will make sure you are satisfied!</p>
-                        <LinkContainer to={'/contact'}>
+                        <Link to='/contact'>
                             <Button variant='success'>Contact Us</Button>
-                        </LinkContainer>
+                        </Link>
                     </Col>
                 </Row>
             </Jumbotron>

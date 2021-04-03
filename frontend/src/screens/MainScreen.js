@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'react-router-dom'
 import carousel1 from '../images/carousel_001.jpg'
 import carousel2 from '../images/carousel_002.jpg'
 import ProductCarousel from '../components/ProductCarousel'
@@ -38,18 +38,18 @@ function MainScreen({ history }) {
                         <Carousel.Caption className='main__carousel__text'>
                             <h1 className="main__text__title">Welcome To <span className="main__text__title__green">MedCan</span></h1>
                             <p className="main__text">High quality cannabis from professional growers in British Columbia and California.</p>
-                            <LinkContainer to={'/store'}>
+                            <Link to='/store'>
                                 <Button variant='success'>Shop Now</Button>
-                            </LinkContainer>
+                            </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{backgroundImage: `url(${carousel2})`, height: '100vh', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll',  backgroundSize: 'cover'}}>
                         <Carousel.Caption className='main__carousel__text'>
                             <h1 className="main__text__title">Here At <span className="main__text__title__green">MedCan</span></h1>
                             <p className="main__text">We are dedicated in providing safe access to affordable quality cannabis.</p>
-                            <LinkContainer to={'/store'}>
+                            <Link to='/store'>
                                 <Button variant='success'>Shop Now</Button>
-                            </LinkContainer>
+                            </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -63,13 +63,13 @@ function MainScreen({ history }) {
                         <div style={{display: 'inline'}}>
                             <div className="container-categories">
                             <div className="content">
-                                <LinkContainer to={'/store'}>
+                                <Link to='/store'>
                                     <div className="content-overlay"></div>
                                     <Image className="content-image" src={cat.image}/>
                                     <div className="content-details fadeIn-bottom">
                                         <h3 className="content-title">{cat.name}</h3>
                                     </div>
-                                </LinkContainer>
+                                </Link>
                             </div>
                             <div className="content-name-under">
                                 <h3 className="content-name-under">{cat.name}</h3>
