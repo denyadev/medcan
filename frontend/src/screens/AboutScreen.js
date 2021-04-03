@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Jumbotron, Image, Breadcrumb, Button, Carousel, Container } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import about from '../images/breadcrumbs/about.jpg'
 import icon1 from '../images/icons-01.png'
 import icon2 from '../images/icons-02.png'

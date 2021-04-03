@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import carousel1 from '../images/carousel_001.jpg'
 import carousel2 from '../images/carousel_002.jpg'
 import ProductCarousel from '../components/ProductCarousel'
