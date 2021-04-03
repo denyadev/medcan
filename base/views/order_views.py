@@ -25,13 +25,12 @@ def addOrderItems(request):
         # (1) Create order
         order = Order.objects.create(
             user=user,
-            #paymentMethod=data['paymentMethod'],
+            paymentMethod=data['paymentMethod'],
             taxPrice=data['taxPrice'],
-            #shippingPrice=data['shippingPrice'],
+            shippingPrice=data['shippingPrice'],
             totalPrice=data['totalPrice'],
             expectedTime=data['expectedTime']
         )
-
         # (2) Create shipping address
         shipping = ShippingAddress.objects.create(
             order=order,
