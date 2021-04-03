@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Link } from 'react-router-dom'
 import carousel1 from '../images/carousel_001.jpg'
 import carousel2 from '../images/carousel_002.jpg'
 import ProductCarousel from '../components/ProductCarousel'
@@ -42,10 +41,6 @@ function MainScreen({ history }) {
                             <LinkContainer to='/store'>
                                 <Button variant='success'>Shop Now</Button>
                             </LinkContainer>
-                            <Button variant='success' href="#/store">Shop Now</Button>
-                            <Link to={'/store'}><Button variant='success' href="#/store">Shop Now</Button></Link>
-                            <Link to='/store'><Button variant='success' href="#/store">Shop Now</Button></Link>
-                            <Link to='#/store'><Button variant='success' href="#/store">Shop Now</Button></Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{backgroundImage: `url(${carousel2})`, height: '100vh', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll',  backgroundSize: 'cover'}}>
