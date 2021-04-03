@@ -50,6 +50,7 @@ function MainScreen({ history }) {
                             <Link to='/store'>
                                 <Button variant='success'>Shop Now</Button>
                             </Link>
+                            <Link to='/store' className='btn btn-success my-3'>Shop Now</Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
