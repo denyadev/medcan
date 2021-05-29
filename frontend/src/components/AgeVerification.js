@@ -17,7 +17,8 @@ function AgeVerification() {
     }
 
     const noHandler = () => {
-        setError('You cannot view this site.')
+        window.close()
+        //setError('You cannot view this site.')
     }
 
 
