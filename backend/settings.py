@@ -26,7 +26,7 @@ SECRET_KEY = '(houp3zw)k97^e$c-lm3&b@3wd9&^c6dz*oxr4$h3vmzd#7yhj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'medcan.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'medcan.herokuapp.com', 'www.med-can.ca', 'med-can.ca']
 
 
 # Application definition
