@@ -34,6 +34,8 @@ function RegisterScreen({location, history}) {
         e.preventDefault()
         if(password != confirmPassword) {
             setMessage('Passwords do not match')
+        } else if (phone.length !== 12) {
+            setMessage('Invalid phone number')
         } else {
             dispatch(register(name, email, phone, password))
         }

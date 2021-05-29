@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap'
+import { useState } from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -21,37 +22,49 @@ import OrderListScreen from './screens/OrderListScreen'
 import AboutScreen from './screens/AboutScreen'
 import ContactScreen from './screens/ContactScreen'
 import MainScreen from './screens/MainScreen'
+import { VerificationContext } from './components/verificationContext'
+import AgeVerification from './components/AgeVerification'
 
 function App() {
+
+    const [verification, setVerification] = useState(localStorage.getItem('verification'))
+
     return (
     <Router>
-        <Header/>
-        <main className="pt-4">
-            <div>
-                <Route exact path='/' component={MainScreen}/>
-                <Route path='/store' component={HomeScreen}/>
-                <Route path='/login' component={LoginScreen}/>
-                <Route path='/register' component={RegisterScreen}/>
-                <Route path='/about' component={AboutScreen}/>
-                <Route path='/contact' component={ContactScreen}/>
-                <Route path='/profile' component={ProfileScreen}/>
-                <Route path='/shipping' component={ShippingScreen}/>
-                <Route path='/payment' component={PaymentScreen}/>
-                <Route path='/placeorder' component={PlaceOrderScreen}/>
-                <Route path='/order/:id' component={OrderScreen}/>
-                <Route path='/product/:id' component={ProductScreen}/>
-                <Route path='/cart/:id?' component={CartScreen}/>
+        <VerificationContext.Provider value={{ verification, setVerification }}>
+            { !verification ? (<AgeVerification/>) : (
+                <div>
+                    <Header/>
+                    <main className="pt-4">
+                        <div>
+                            <Route exact path='/' component={MainScreen}/>
+                            <Route path='/store' component={HomeScreen}/>
+                            <Route path='/login' component={LoginScreen}/>
+                            <Route path='/register' component={RegisterScreen}/>
+                            <Route path='/about' component={AboutScreen}/>
+                            <Route path='/contact' component={ContactScreen}/>
+                            <Route path='/profile' component={ProfileScreen}/>
+                            <Route path='/shipping' component={ShippingScreen}/>
+                            <Route path='/payment' component={PaymentScreen}/>
+                            <Route path='/placeorder' component={PlaceOrderScreen}/>
+                            <Route path='/order/:id' component={OrderScreen}/>
+                            <Route path='/product/:id' component={ProductScreen}/>
+                            <Route path='/cart/:id?' component={CartScreen}/>
 
-                <Route path='/admin/userlist' component={UserListScreen}/>
-                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                            <Route path='/admin/userlist' component={UserListScreen}/>
+                            <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
 
-                <Route path='/admin/productlist' component={ProductListScreen}/>
-                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                            <Route path='/admin/productlist' component={ProductListScreen}/>
+                            <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
 
-                <Route path='/admin/orderlist' component={OrderListScreen}/>
-            </div>
-        </main>
-        <Footer/>
+                            <Route path='/admin/orderlist' component={OrderListScreen}/>
+                        </div>
+                    </main>
+                    <Footer/>
+                </div>
+            )}
+        
+        </VerificationContext.Provider>
     </Router>
     );
 }

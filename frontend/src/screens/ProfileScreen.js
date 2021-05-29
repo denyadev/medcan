@@ -53,6 +53,8 @@ function ProfileScreen({ history }) {
         e.preventDefault()
         if(password != confirmPassword) {
             setMessage('Passwords do not match')
+        } else if (phone.length !== 12) {
+            setMessage('Invalid phone number')
         } else {
             dispatch(updateUserProfile({
                 'id': user._id,

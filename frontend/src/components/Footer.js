@@ -37,7 +37,7 @@ function Footer() {
                     </Col>
                     <Col lg={6} md={6} xs={12} className="text-right">
                         <Link to='/' className="pr-4 footer__text">Home</Link>
-                        <Link to='/' className="pr-4 footer__text">Store</Link>
+                        <Link to='/store' className="pr-4 footer__text">Store</Link>
                         <Link to='/contact' className="footer__text">Contact Us</Link>
                     </Col>
                 </Row>

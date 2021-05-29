@@ -4,9 +4,22 @@ import { Link } from 'react-router-dom'
 import FormContainer from '../components/FormContainer'
 import contact from '../images/breadcrumbs/med_contact.jpg'
 import Map from '../components/Map'
+import emailjs from 'emailjs-com'
 
 
 function ContactScreen() {
+
+    function sendEmail(e) {
+        e.preventDefault()
+
+        emailjs.sendForm('service_xydoifd', 'template_i8uw3oi', e.target, 'user_xkEwPrsmXNLAmAo45qu1p')
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            })
+        e.target.reset()
+    }
 
     return (
         <div>
@@ -29,27 +42,26 @@ function ContactScreen() {
                             </div>
                             <br/><br/>
                             <h1 className="contact__title">Get In Touch</h1>
-                            <Form onSubmit={''}>
+                            <Form onSubmit={sendEmail}>
                                 <Form.Group controlId='formBasicName'>
                                     <Form.Label>Name</Form.Label>
-                                    <Form.Control type='text' placeholder='Enter Name' value={''} onChange={''}></Form.Control>
+                                    <Form.Control type='text' placeholder='Enter Name' name='name'/>
                                 </Form.Group>
 
                                 <Form.Group controlId='formBasicEmail'>
                                     <Form.Label>Email Address</Form.Label>
-                                    <Form.Control type='email' placeholder='Enter Email' value={''} onChange={''}></Form.Control>
+                                    <Form.Control type='email' placeholder='Enter Email' name='email' />
                                 </Form.Group>
 
                                 <Form.Group controlId='formBasicSubject'>
                                     <Form.Label>Subject</Form.Label>
-                                    <Form.Control type='text' placeholder='Enter Subject' value={''} onChange={''}></Form.Control>
+                                    <Form.Control type='text' placeholder='Enter Subject' name='subject' />
                                 </Form.Group>
 
                                 <Form.Group controlId='formBasicMessage'>
                                     <Form.Label>Message</Form.Label>
-                                    <Form.Control as='textarea' rows='5' placeholder='Enter Message' value={''} onChange={''}></Form.Control>
+                                    <Form.Control as='textarea' rows='5' placeholder='Enter Message' name='message' />
                                 </Form.Group>
-
 
                                 <Button type='submit' variant='success'>Send</Button>
                             </Form>
