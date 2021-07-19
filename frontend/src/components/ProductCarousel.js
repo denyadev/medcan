@@ -30,7 +30,7 @@ function ProductCarousel() {
                                 <Image src={product.image} alt={product.name} fluid />
                             </Col>
                             <Col md={6} sm={12} xs={12}>
-                                <Carousel.Caption className="carousel__caption"><h4>{product.name} - ${product.price}</h4><hr/>{product.brand}<hr/>{product.description}</Carousel.Caption>
+                                <Carousel.Caption className="carousel__caption"><h4>{product.name} - ${product.price}</h4><hr/>{product.brand}<hr/>{product.description.substring(0,780)}..</Carousel.Caption>
                             </Col>
                         </Row>
                     </Link>

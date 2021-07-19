@@ -19,7 +19,9 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
     "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
     "react-moment": "^1.1.1",
     "react-paypal-button-v2": "^2.6.3",
     "react-phone-number-input": "^3.1.18",
@@ -27,9 +29,11 @@
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-spring": "^9.2.4",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

@@ -1,8 +1,9 @@
 import { Container } from 'react-bootstrap'
-import { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ReactGa from 'react-ga';
 
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
@@ -26,6 +27,12 @@ import { VerificationContext } from './components/verificationContext'
 import AgeVerification from './components/AgeVerification'
 
 function App() {
+
+    useEffect(() => {
+        ReactGa.initialize('UA-202494145-1')
+        // to report page view
+        ReactGa.pageview(window.location.pathname + window.location.search)
+    }, [])
 
     const [verification, setVerification] = useState(localStorage.getItem('verification'))
 

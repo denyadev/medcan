@@ -17,8 +17,7 @@ function AgeVerification() {
     }
 
     const noHandler = () => {
-        window.close()
-        //setError('You cannot view this site.')
+        setError('You cannot view this site.')
     }
 
 
@@ -27,7 +26,7 @@ function AgeVerification() {
             <FormContainer>
                     { error && <h2 style={{color:'red'}}>{error}</h2>}
                     <Form.Group>
-                        <Form.Label style={{color: 'white', fontFamily: 'sans-serif' ,fontSize: '30px', fontWeight: '800'}}>You must be over 19 years old to visit this site</Form.Label>
+                        <Form.Label style={{color: 'white', fontFamily: 'sans-serif', fontSize: '30px', fontWeight: '800'}}>You must be over 19 years old to visit this site</Form.Label>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label style={{color: 'white', fontFamily: 'sans-serif', fontSize: '20px', fontWeight: '400'}}>Please, verify your age.</Form.Label>

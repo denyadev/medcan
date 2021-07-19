@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Row, Col, ListGroup, Image, Card, Container, Breadcrumb, Jumbotron } from 'react-bootstrap'
+import { Button, Row, Col, ListGroup, Image, Card, Container, Breadcrumb, Jumbotron, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
@@ -87,6 +87,12 @@ function PlaceOrderScreen({ history }) {
                             <ListGroup.Item>
                                 <h2>Expected Arrival</h2>
                                 <TimePickerComponent placeholder="Select a time" min={minTime} max={maxTime} step={15} onChange={expectedTimeHandler}/>
+                            </ListGroup.Item>
+
+                            <ListGroup.Item>
+                                <h2>Custom Order</h2>
+                                <Form.Label>If you want custom order. Please fill out the information below.</Form.Label>
+                                <Form.Control as='textarea' rows='5' placeholder='Enter Details' name='message' />
                             </ListGroup.Item>
 
                             <ListGroup.Item>

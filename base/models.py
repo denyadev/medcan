@@ -13,6 +13,8 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
     numReviews = models.IntegerField(null=True, blank=True, default=0)
     price = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
+    #discount = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
+    #hidden = models.BooleanField(default=False)
     countInStock = models.IntegerField(null=True, blank=True, default=0)
     createdAt = models.DateTimeField(auto_now_add=True)
     _id = models.AutoField(primary_key=True, editable=False)

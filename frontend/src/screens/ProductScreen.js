@@ -8,11 +8,20 @@ import Message from '../components/Message'
 import { listProductDetails, createProductReview } from '../actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants'
 import product_details from '../images/breadcrumbs/medcan_05.jpg'
+import styled from 'styled-components'
+import Modal from '../components/Modal'
+import GlobalStyle from '../components/globalStyles'
+import emailjs from 'emailjs-com'
 
 function ProductScreen({ match, history }) {
     const [qty, setQty] = useState(1)
     const [rating, setRating] = useState(0)
     const [comment, setComment] = useState('')
+
+    const [showModal, setShowModal] = useState(false)
+    const openModal = () => {
+        setShowModal(prev => !prev)
+    }
 
     const stockCounter = 30
 
@@ -52,6 +61,12 @@ function ProductScreen({ match, history }) {
                 comment
             }
         ))
+        emailjs.sendForm('service_xydoifd', 'template_i8uw3oi', e.target, 'user_xkEwPrsmXNLAmAo45qu1p')
+        .then((result) => {
+            console.log(result.text)
+        }, (error) => {
+            console.log(error.text)
+        })
     }
 
     return (
@@ -67,7 +82,9 @@ function ProductScreen({ match, history }) {
                             <div>
                                 <Row>
                                 <Col md={6}>
-                                    <Image src={product.image} alt={product.name} fluid/>
+                                    <Image onClick={openModal} src={product.image} alt={product.name} fluid/>
+                                    <Modal showModal={showModal} setShowModal={setShowModal} product={product}/>
+                                    <GlobalStyle />
                                 </Col>
                                 <Col md={6}>
                                     <ListGroup variant="flush">
@@ -135,7 +152,7 @@ function ProductScreen({ match, history }) {
                                             )}
                 
                                             <ListGroup.Item>
-                                                <Button onClick={addToCartHandler} className='btn-block btn-success' disabled={product.countInStock == 0} type='button'>Add to Cart</Button>
+                                                <Button onClick={addToCartHandler} className='btn-block btn-success' disabled={product.countInStock <= 0} type='button'>Add to Cart</Button>
                                             </ListGroup.Item>
                                         </ListGroup>
                                     </Card>
