@@ -15,6 +15,7 @@ function ProductEditScreen({ match, history }) {
 
     const [name, setName] = useState('')
     const [price, setPrice] = useState(0)
+    const [discount, setDiscount] = useState(0)
     const [image, setImage] = useState('')
     const [brand, setBrand] = useState({})
     const [category, setCategory] = useState({})
@@ -22,6 +23,7 @@ function ProductEditScreen({ match, history }) {
     const [description, setDescription] = useState('')
     const [features, setFeatures] = useState('')
     const [uploading, setUploading] = useState(false)
+    const [hidden, setHidden] = useState(false)
 
     const dispatch = useDispatch()
 
@@ -41,12 +43,14 @@ function ProductEditScreen({ match, history }) {
             } else {
                 setName(product.name)
                 setPrice(product.price)
+                setDiscount(product.discount)
                 setImage(product.image)
                 setBrand(product.brand)
                 setCategory(product.category)
                 setCountInStock(product.countInStock)
                 setDescription(product.description)
                 setFeatures(product.features)
+                setHidden(product.hidden)
             }
         }
     }, [ history, productId, product, dispatch, successUpdate ])
@@ -57,12 +61,14 @@ function ProductEditScreen({ match, history }) {
             _id: productId,
             name,
             price,
+            discount,
             image,
             brand,
             category,
             countInStock,
             description,
-            features
+            features,
+            hidden
         }))
     }
 
@@ -110,6 +116,16 @@ function ProductEditScreen({ match, history }) {
                         <Form.Group controlId='price'>
                             <Form.Label>Price</Form.Label>
                             <Form.Control type='number' placeholder='Enter Price' value={price} onChange={(e) => setPrice(e.target.value)}></Form.Control>
+                        </Form.Group>
+
+                        <Form.Group controlId='discount'>
+                            <Form.Label>Discount</Form.Label>
+                            <Form.Control type='number' placeholder='Enter Discount' value={discount} onChange={(e) => setDiscount(e.target.value)}></Form.Control>
+                        </Form.Group>
+
+                        <Form.Group controlId='hidden'>
+                            <Form.Label>Hide Product</Form.Label>
+                            <Form.Check type='checkbox' label='Hide' checked={hidden} onChange={(e) => setHidden(e.target.checked)}></Form.Check>
                         </Form.Group>
 
                         <Form.Group controlId='image'>

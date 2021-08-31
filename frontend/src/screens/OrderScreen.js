@@ -86,6 +86,7 @@ function OrderScreen({ match, history }) {
                                 <p><strong>Email: </strong> <a href={`mailto:${order.user.email}`}>{order.user.email}</a></p>
                                 <p><strong>Phone Number:</strong> <a href={`tel:${order.user.phone}`}>{order.user.phone}</a></p>
                                 <p><strong>Expected Arrival:</strong>{order.expectedTime}</p>
+                                <p><strong>Custom Order: </strong>{order.customMessage}</p>
                                 {/* <p>
                                     <strong>Shipping: </strong>
                                     {order.shippingAddress.address},   {order.shippingAddress.city},

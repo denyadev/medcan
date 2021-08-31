@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d02602c.chunk.css",
-    "main.js": "/static/js/main.273eb56b.chunk.js",
-    "main.js.map": "/static/js/main.273eb56b.chunk.js.map",
+    "main.css": "/static/css/main.5895ca1e.chunk.css",
+    "main.js": "/static/js/main.c27cf583.chunk.js",
+    "main.js.map": "/static/js/main.c27cf583.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.227d0703.js",
     "runtime-main.js.map": "/static/js/runtime-main.227d0703.js.map",
-    "static/js/2.6ab7e71c.chunk.js": "/static/js/2.6ab7e71c.chunk.js",
-    "static/js/2.6ab7e71c.chunk.js.map": "/static/js/2.6ab7e71c.chunk.js.map",
+    "static/js/2.89ac151d.chunk.js": "/static/js/2.89ac151d.chunk.js",
+    "static/js/2.89ac151d.chunk.js.map": "/static/js/2.89ac151d.chunk.js.map",
     "static/js/3.e028cb81.chunk.js": "/static/js/3.e028cb81.chunk.js",
     "static/js/3.e028cb81.chunk.js.map": "/static/js/3.e028cb81.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9d02602c.chunk.css.map": "/static/css/main.9d02602c.chunk.css.map",
-    "static/js/2.6ab7e71c.chunk.js.LICENSE.txt": "/static/js/2.6ab7e71c.chunk.js.LICENSE.txt",
+    "static/css/main.5895ca1e.chunk.css.map": "/static/css/main.5895ca1e.chunk.css.map",
+    "static/js/2.89ac151d.chunk.js.LICENSE.txt": "/static/js/2.89ac151d.chunk.js.LICENSE.txt",
     "static/media/Concentrates.fa4790f5.jpg": "/static/media/Concentrates.fa4790f5.jpg",
     "static/media/Edibles.0178e470.jpg": "/static/media/Edibles.0178e470.jpg",
     "static/media/Hash.d3e2a629.jpg": "/static/media/Hash.d3e2a629.jpg",
@@ -22,6 +22,7 @@
     "static/media/carousel_001.4c485791.jpg": "/static/media/carousel_001.4c485791.jpg",
     "static/media/carousel_002.c5415416.jpg": "/static/media/carousel_002.c5415416.jpg",
     "static/media/hemp-4354381_1920.f870f134.jpg": "/static/media/hemp-4354381_1920.f870f134.jpg",
+    "static/media/map.21610acf.png": "/static/media/map.21610acf.png",
     "static/media/med_contact.5a86f3db.jpg": "/static/media/med_contact.5a86f3db.jpg",
     "static/media/medcan.74beab05.png": "/static/media/medcan.74beab05.png",
     "static/media/medcan_01.f650f164.jpg": "/static/media/medcan_01.f650f164.jpg",
@@ -32,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.227d0703.js",
-    "static/js/2.6ab7e71c.chunk.js",
-    "static/css/main.9d02602c.chunk.css",
-    "static/js/main.273eb56b.chunk.js"
+    "static/js/2.89ac151d.chunk.js",
+    "static/css/main.5895ca1e.chunk.css",
+    "static/js/main.c27cf583.chunk.js"
   ]
 }

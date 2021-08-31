@@ -18,12 +18,12 @@ function MainScreen({ history }) {
     const categoryList = useSelector(state => state.categoryList)
 
     const category_map = [
-        { name: 'Indica', image: indica__img },
-        { name: 'Sativa', image: sativa__img },
-        { name: 'Hybrid', image: hybrid__img },
-        { name: 'Hash', image: hash__img },
-        { name: 'Edibles', image: edibles__img },
-        { name: 'Concentrates', image: concentrates__img },
+        { name: 'Indica', image: indica__img, id: 1 },
+        { name: 'Sativa', image: sativa__img, id: 2 },
+        { name: 'Hybrid', image: hybrid__img, id: 3 },
+        { name: 'Hash', image: hash__img, id: 4 },
+        { name: 'Edibles', image: edibles__img, id: 5 },
+        { name: 'Concentrates', image: concentrates__img, id: 6 },
     ]
 
     useEffect(() => {
@@ -59,7 +59,7 @@ function MainScreen({ history }) {
                     <div class="text-center">
                     <h2 class="contact__title">Categories</h2>
                     {category_map.map(cat => (
-                        <Col md={2} sm={4} xs={12} style={{display: 'inline-block'}}>
+                        <Col md={2} sm={4} xs={12} style={{display: 'inline-block'}} key={cat.id}>
                         <div style={{display: 'inline'}}>
                             <div className="container-categories">
                             <div className="content">

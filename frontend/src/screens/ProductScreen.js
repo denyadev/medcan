@@ -61,7 +61,7 @@ function ProductScreen({ match, history }) {
                 comment
             }
         ))
-        emailjs.sendForm('service_xydoifd', 'template_i8uw3oi', e.target, 'user_xkEwPrsmXNLAmAo45qu1p')
+        emailjs.sendForm('service_xydoifd', 'template_0128r4o', e.target, 'user_xkEwPrsmXNLAmAo45qu1p')
         .then((result) => {
             console.log(result.text)
         }, (error) => {
@@ -93,7 +93,10 @@ function ProductScreen({ match, history }) {
                                         </ListGroup.Item>
                 
                                         <ListGroup.Item>
-                                            Price: ${product.price}/gram
+                                            {product.discount !== '0.00' ? 
+                                            (<p>Price: <span className="old__price">${product.price}/gram</span>&nbsp;&nbsp;<span className="new__price">${(product.price - product.discount).toFixed(2)}/gram</span></p>)
+                                            :
+                                            (<p>Price: <span>${product.price}/gram</span></p>)}
                                         </ListGroup.Item>
                 
                                         <ListGroup.Item>
@@ -106,7 +109,7 @@ function ProductScreen({ match, history }) {
                                             <ListGroup.Item >
                                                 <Row>
                                                     <Col>Price:</Col>
-                                                    <Col><strong>${(product.price * qty).toFixed(2)}</strong></Col>
+                                                    <Col><strong>${((product.price - product.discount) * qty).toFixed(2)}</strong></Col>
                                                 </Row>
                                             </ListGroup.Item>
                 
@@ -192,7 +195,7 @@ function ProductScreen({ match, history }) {
                                                     <Form onSubmit={submitHandler}>
                                                         <Form.Group controlId='rating'>
                                                             <Form.Label>Rating</Form.Label>
-                                                            <Form.Control as='select' value={rating} onChange={(e) => setRating(e.target.value)}>
+                                                            <Form.Control as='select' value={rating} name='rating' onChange={(e) => setRating(e.target.value)}>
                                                                 <option value=''>Select...</option>
                                                                 <option value='1'>1 - Poor</option>
                                                                 <option value='2'>2 - Fair</option>
@@ -203,7 +206,7 @@ function ProductScreen({ match, history }) {
                                                         </Form.Group>
                                                         <Form.Group controlId='comment'>
                                                             <Form.Label>Review</Form.Label>
-                                                            <Form.Control as='textarea' rows='5' value={comment} onChange={(e) => setComment(e.target.value)}></Form.Control>
+                                                            <Form.Control as='textarea' rows='5' value={comment} name='comment' onChange={(e) => setComment(e.target.value)}></Form.Control>
                                                         </Form.Group>
 
                                                         <Button disabled={loadingProductReview} type='submit' variant='success'>Submit</Button>

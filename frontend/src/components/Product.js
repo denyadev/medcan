@@ -20,7 +20,10 @@ function Product({ product }) {
                 </Link>
                 <div>
                     <h3 className="product__title">{product.name}</h3>
-                    <p className="product__price">${product.price}</p>
+                    {(product.discount !== '0.00') ? 
+                    (<p className="product__price"><span className="old__price">${product.price}</span>&nbsp;&nbsp;<span className="new__price">${(product.price - product.discount).toFixed(2)}</span></p>)
+                    :
+                    (<p className="product__price">${product.price}</p>)}
                 </div>
             </div>        
         </div>

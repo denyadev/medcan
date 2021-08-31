@@ -81,8 +81,10 @@ function ProductListScreen({ history, match }) {
                                     <th>NAME</th>
                                     <th>ADDED BY</th>
                                     <th>PRICE</th>
+                                    <th>DISCOUNT</th>
                                     <th>CATEGORY</th>
                                     <th>GRADE</th>
+                                    <th>HIDDEN</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -94,8 +96,14 @@ function ProductListScreen({ history, match }) {
                                         <td>{product.name}</td>
                                         <td>{product.user.name}</td>
                                         <td>${product.price}</td>
+                                        <td>${product.discount}</td>
                                         <td>{product.category}</td>
                                         <td>{product.brand}</td>
+                                        <td>{product.hidden ? (
+                                        <i className='fas fa-check' style={{color:'green'}}></i>
+                                        ) : (
+                                            <i className='fas fa-times' style={{color:'red'}}></i>
+                                        )}</td>
                                         <td>
                                             <LinkContainer to={`/admin/product/${product._id}/edit`}>
                                                 <Button variant='light' className='btn-sm'><i className='fas fa-edit'></i></Button>

@@ -29,7 +29,8 @@ def addOrderItems(request):
             taxPrice=data['taxPrice'],
             shippingPrice=data['shippingPrice'],
             totalPrice=data['totalPrice'],
-            expectedTime=data['expectedTime']
+            expectedTime=data['expectedTime'],
+            customMessage=data['customMessage']
         )
         # (2) Create shipping address
         # shipping = ShippingAddress.objects.create(

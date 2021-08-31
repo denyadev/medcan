@@ -17,6 +17,8 @@ function PlaceOrderScreen({ history }) {
 
     const [expectedTime, setExpectedTime] = useState('')
 
+    const [customMessage, setCustomMessage] = useState('')
+
     const orderCreate = useSelector(state => state.orderCreate)
     const { order, error, success } = orderCreate
 
@@ -47,7 +49,8 @@ function PlaceOrderScreen({ history }) {
             shippingPrice: cart.shippingPrice,
             taxPrice: cart.taxPrice,
             totalPrice: cart.totalPrice,
-            expectedTime: expectedTime
+            expectedTime: expectedTime,
+            customMessage: customMessage
         }))
     }
 
@@ -92,7 +95,7 @@ function PlaceOrderScreen({ history }) {
                             <ListGroup.Item>
                                 <h2>Custom Order</h2>
                                 <Form.Label>If you want custom order. Please fill out the information below.</Form.Label>
-                                <Form.Control as='textarea' rows='5' placeholder='Enter Details' name='message' />
+                                <Form.Control as='textarea' rows='5' placeholder='Enter Details' name='message' onChange={(e) => setCustomMessage(e.target.value)}/>
                             </ListGroup.Item>
 
                             <ListGroup.Item>

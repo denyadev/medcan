@@ -99,28 +99,28 @@ function HomeScreen({ history }) {
                                             if (inStock === 'all') {
                                                 if (selectedCategory === 'all' && selectedBrand === 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => (
-                                                                <Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
+                                                            {(products.map((product) => {return product.hidden === false ?
+                                                                (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
-                                                                </Col> )))}
+                                                                </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory !== 'all' && selectedBrand === 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.category === selectedCategory ?
+                                                            {(products.map((product) => {return product.category === selectedCategory && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory === 'all' && selectedBrand !== 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.brand === selectedBrand ?
+                                                            {(products.map((product) => {return product.brand === selectedBrand && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory !== 'all' && selectedBrand !== 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.brand === selectedBrand && product.category === selectedCategory ?
+                                                            {(products.map((product) => {return product.brand === selectedBrand && product.category === selectedCategory && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
@@ -129,28 +129,28 @@ function HomeScreen({ history }) {
                                             } else {
                                                 if (selectedCategory === 'all' && selectedBrand === 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.countInStock > 0 ?
+                                                            {(products.map((product) => {return product.countInStock > 0 && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory !== 'all' && selectedBrand === 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.countInStock > 0 && product.category === selectedCategory ?
+                                                            {(products.map((product) => {return product.countInStock > 0 && product.category === selectedCategory && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory === 'all' && selectedBrand !== 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.countInStock > 0 && product.brand === selectedBrand ?
+                                                            {(products.map((product) => {return product.countInStock > 0 && product.brand === selectedBrand && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}
                                                             </div>)
                                                 } else if (selectedCategory !== 'all' && selectedBrand !== 'all') {
                                                     return (<div>
-                                                            {(products.map((product) => {return product.countInStock > 0 && product.brand === selectedBrand && product.category === selectedCategory ?
+                                                            {(products.map((product) => {return product.countInStock > 0 && product.brand === selectedBrand && product.category === selectedCategory && product.hidden === false ?
                                                                 (<Col md={4} sm={6} xs={12} style={{display: 'inline-block'}} key={product._id}>
                                                                     <Product product={product}/>
                                                                 </Col>): null}))}

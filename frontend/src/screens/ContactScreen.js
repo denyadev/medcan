@@ -3,6 +3,7 @@ import { Row, Col, Button, Image, Container, Form, Breadcrumb, Jumbotron } from 
 import { Link } from 'react-router-dom'
 import FormContainer from '../components/FormContainer'
 import contact from '../images/breadcrumbs/med_contact.jpg'
+import map from '../images/map.png'
 import Map from '../components/Map'
 import emailjs from 'emailjs-com'
 
@@ -69,7 +70,7 @@ function ContactScreen() {
                     
                     <Col md={6}>
                         <h1 className="contact__title google__maps__text">Google Maps</h1>
-                        <Map/>
+                        <Image src={map} style={{height: '670px'}}/>
                     </Col>
                 </Row>      
                 </Jumbotron>

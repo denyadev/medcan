@@ -74,11 +74,13 @@ def createProduct(request):
         user=user,
         name='Sample Name',
         price=0,
+        discount=0,
         brand='Sample Grade',
         countInStock=0,
         category='Sample Category',
         description='',
-        features=''
+        features='',
+        hidden=False
     )
     serializer = ProductSerializer(product, many=False)
     return Response(serializer.data)
@@ -92,11 +94,13 @@ def updateProduct(request, pk):
 
     product.name = data['name']
     product.price = data['price']
+    product.discount = data['discount']
     product.category = data['category']
     product.brand = data['brand']
     product.countInStock = data['countInStock']
     product.description = data['description']
     product.features = data['features']
+    product.hidden = data['hidden']
 
     product.save()
 
