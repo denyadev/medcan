@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5895ca1e.chunk.css",
-    "main.js": "/static/js/main.c27cf583.chunk.js",
-    "main.js.map": "/static/js/main.c27cf583.chunk.js.map",
+    "main.js": "/static/js/main.66fae882.chunk.js",
+    "main.js.map": "/static/js/main.66fae882.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.227d0703.js",
     "runtime-main.js.map": "/static/js/runtime-main.227d0703.js.map",
     "static/js/2.89ac151d.chunk.js": "/static/js/2.89ac151d.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/carousel_001.4c485791.jpg": "/static/media/carousel_001.4c485791.jpg",
     "static/media/carousel_002.c5415416.jpg": "/static/media/carousel_002.c5415416.jpg",
     "static/media/hemp-4354381_1920.f870f134.jpg": "/static/media/hemp-4354381_1920.f870f134.jpg",
-    "static/media/map.21610acf.png": "/static/media/map.21610acf.png",
+    "static/media/map.0454397b.png": "/static/media/map.0454397b.png",
     "static/media/med_contact.5a86f3db.jpg": "/static/media/med_contact.5a86f3db.jpg",
     "static/media/medcan.74beab05.png": "/static/media/medcan.74beab05.png",
     "static/media/medcan_01.f650f164.jpg": "/static/media/medcan_01.f650f164.jpg",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.227d0703.js",
     "static/js/2.89ac151d.chunk.js",
     "static/css/main.5895ca1e.chunk.css",
-    "static/js/main.c27cf583.chunk.js"
+    "static/js/main.66fae882.chunk.js"
   ]
 }

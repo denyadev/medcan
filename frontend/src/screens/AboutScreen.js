@@ -40,11 +40,11 @@ function AboutScreen() {
                     </Col>
 
                     <Col md={6} sm={12}>
-                        <Image src={icon3} alt='icon-3' className="about__icons"/>
+                        <Image src={icon4} alt='icon-3' className="about__icons"/>
                         <h4>In-Person Order</h4>
-                        <p className="ways__text">You can also make your order in person when you come to our storefront. Currently we are only open for curbside pickup so you will need to make your order at the front door.</p>
+                        <p className="ways__text">You can also make your order in person when you come to our storefront.</p>
 
-                        <Image src={icon4} alt='icon-4' className="about__icons"/>
+                        <Image src={icon3} alt='icon-4' className="about__icons"/>
                         <h4>Payment</h4>
                         <p className="ways__text">We currently only accept cash. There are ATMs located near the storefront for your convenience. If placing a pre-order please have cash available when you come to pick up your order.</p>
                     </Col>
