@@ -23,7 +23,7 @@ function Header() {
     return (
         <header className={`${location.pathname === '/' ? "header__main" : ""}`}>
             <div>
-                <p className="text-center info__text" style={{color: 'white', backgroundColor: '#0053A9', padding: '10px'}}>Get a FREE pre roll if you leave us a review on Google Maps.</p>
+                <p className="text-center info__text" style={{color: 'white', backgroundColor: '#0053A9', padding: '10px'}}>Spend $35 or more, get a free pre-roll!</p>
             </div>
             <Container>
                 <Navbar bg="" variant="light" expand="lg" className="navbar__nav">
