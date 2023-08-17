@@ -26,7 +26,7 @@ SECRET_KEY = '(houp3zw)k97^e$c-lm3&b@3wd9&^c6dz*oxr4$h3vmzd#7yhj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'medcan.herokuapp.com', 'med-can.ca', 'www.med-can.ca']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -121,17 +121,20 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'medcan',
-        'USER': 'medcanmgmt',
-        'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': 'medcan-identifier.chqidxmc3tbv.us-east-2.rds.amazonaws.com',
-        'PORT': '5432'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd52spvovufqsvk',
+#         'USER': 'vaybyijtlvczlj',
+#         'PASSWORD':'16ab2406be8a2bbd5d0a9751ad559387988298a5e54b22a93dd0c993c3a610dd',
+#         'HOST': 'ec2-44-210-36-247.compute-1.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
 
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -182,13 +185,22 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-AWS_QUERYSTRING_AUTH = False
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_QUERYSTRING_AUTH = False
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-AWS_STORAGE_BUCKET_NAME = 'medcan-bucket'
+# AWS_STORAGE_BUCKET_NAME = 'medcan-bucket'
+
+# AWS_QUERYSTRING_AUTH = False
+# DEFAULT_FILE_STORAGE = 'dpzlhr8rg'
+
+# AWS_ACCESS_KEY_ID = '388951347766491'
+# AWS_SECRET_ACCESS_KEY = 'LOaWaFx9-YzG_-j1KhobRDafcdA'
+
+# AWS_STORAGE_BUCKET_NAME = 'dpzlhr8rg'
+
 
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
